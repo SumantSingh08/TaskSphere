@@ -27,10 +27,8 @@ const Dashboard = () => {
     <div className="min-h-screen bg-linear-to-br from-pink-50 to-white pt-24 pb-12 px-4">
   <div className="max-w-6xl mx-auto">
 
-    {/* ================= HEADER SECTION ================= */}
     <div className="bg-white shadow-lg rounded-2xl p-6 mb-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-      
-      {/* Welcome Text */}
+  
       <div>
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
           Welcome back,{" "}
@@ -41,10 +39,8 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* Stats + Logout */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
         
-        {/* Stats Box */}
         <div className="bg-blue-50 px-6 py-3 rounded-xl text-center min-w-20">
           <p className="text-xs text-gray-500">Total Tasks</p>
           <p className="text-xl font-bold text-blue-600">
@@ -55,7 +51,6 @@ const Dashboard = () => {
     
     </div>
 
-    {/* ================= TASK FORM ================= */}
     <div className="bg-white shadow-md rounded-2xl p-6 mb-8">
       <h3 className="text-lg font-semibold mb-4 text-gray-700">
         {editingTask ? "Update Task" : "Add New Task"}
@@ -68,7 +63,6 @@ const Dashboard = () => {
       />
     </div>
 
-    {/* ================= SEARCH SECTION ================= */}
     <div className="mb-6">
       <div className="relative">
         <input
@@ -83,7 +77,6 @@ const Dashboard = () => {
       </div>
     </div>
 
-    {/* ================= TASK LIST ================= */}
     <div className="bg-white shadow-md rounded-2xl p-6">
       <h3 className="text-lg font-semibold mb-4 text-gray-700">
         Your Tasks
