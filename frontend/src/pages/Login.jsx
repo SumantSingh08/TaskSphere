@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-50 via-blue-50 to-gray-100 px-4">
 
   <div className="w-full max-w-md">
 
@@ -68,7 +68,7 @@ const Login = () => {
       </div>
 
       {/* Login Button */}
-      <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300">
+      <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer">
         Login
       </button>
 
