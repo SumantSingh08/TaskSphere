@@ -67,7 +67,7 @@ const TaskForm = ({ fetchTasks, editingTask, setEditingTask }) => {
       />
 
       <div className="flex gap-3">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded transition cursor-pointer">
           {editingTask ? "Update Task" : "Add Task"}
         </button>
 
@@ -75,7 +75,7 @@ const TaskForm = ({ fetchTasks, editingTask, setEditingTask }) => {
           <button
             type="button"
             onClick={handleCancel}
-            className="bg-gray-400 text-white px-4 py-2 rounded"
+            className="bg-gray-400 text-white px-4 py-2 rounded transition cursor-pointer"
           >
             Cancel
           </button>

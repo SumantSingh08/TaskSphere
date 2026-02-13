@@ -27,6 +27,13 @@ const Navbar = () => {
             Home
           </Link>
 
+          <Link
+                to="/dashboard"
+                className="hover:text-blue-600 transition"
+              >
+                Dashboard
+          </Link>
+
           {!user && (
           
             <Link
@@ -39,20 +46,13 @@ const Navbar = () => {
             
           )}
 
-          <Link
-                to="/dashboard"
-                className="hover:text-blue-600 transition"
-              >
-                Dashboard
-          </Link>
-
 
           {user && (
             <>
               
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition cursor-pointer"
               >
                 Logout
               </button>
@@ -76,17 +76,21 @@ const Navbar = () => {
             Home
           </Link>
 
+          <Link to="/dashboard" className="block">
+                Dashboard
+              </Link>
+
           {!user && (
             <Link to="/login" className="block">
               Login
             </Link>
           )}
 
+          
+
           {user && (
             <>
-              <Link to="/dashboard" className="block">
-                Dashboard
-              </Link>
+              
               <button
                 onClick={handleLogout}
                 className="block text-left w-full"

@@ -31,14 +31,14 @@ const TaskList = ({ tasks, fetchTasks, setEditingTask }) => {
           <div className="flex gap-3">
             <button
               onClick={() => setEditingTask(task)}
-              className="bg-yellow-500 text-white px-3 py-1 rounded"
+              className="bg-yellow-500 text-white px-3 py-1 rounded transition cursor-pointer"
             >
               Edit
             </button>
 
             <button
               onClick={() => handleDelete(task._id)}
-              className="bg-red-500 text-white px-3 py-1 rounded"
+              className="bg-red-500 text-white px-3 py-1 rounded transition cursor-pointer"
             >
               Delete
             </button>

@@ -3,79 +3,101 @@ import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-blue-50 pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 pt-24">
 
-      {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+  {/* ================= HERO SECTION ================= */}
+  <div className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
 
-        {/* Left Content */}
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Manage Your Tasks <br />
-            <span className="text-blue-600">Efficiently & Securely</span>
-          </h1>
+    {/* Left Content */}
+    <div className="text-center lg:text-left">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-800">
+        Manage Your Tasks <br />
+        <span className="text-blue-600">Efficiently & Securely</span>
+      </h1>
 
-          <p className="text-gray-600 mb-8 text-lg">
-            TaskPro helps you organize your daily work with secure authentication,
-            real-time updates, and a powerful dashboard.
-          </p>
+      <p className="text-gray-600 mb-8 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0">
+        TaskPro helps you organize your daily work with secure authentication,
+        real-time updates, and a powerful dashboard built for productivity.
+      </p>
 
-          <div className="flex space-x-4">
-            <Link
-              to="/dashboard"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-            >
-              Get Started
-            </Link>
+      <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+        <Link
+          to="/dashboard"
+          className="px-8 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300 text-lg font-medium"
+        >
+          Get Started 🚀
+        </Link>
 
-          
-          </div>
-        </div>
-
-        {/* Right Image / Illustration */}
-        <div className="flex justify-center">
-          <img
-            src="https://illustrations.popsy.co/gray/work-from-home.svg"
-            alt="hero"
-            className="w-full max-w-md"
-          />
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
-
-          <div className="p-6 shadow rounded-lg hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-3">
-              Secure Authentication
-            </h3>
-            <p className="text-gray-600">
-              JWT-based login system with encrypted passwords for maximum security.
-            </p>
-          </div>
-
-          <div className="p-6 shadow rounded-lg hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-3">
-              Real-time Dashboard
-            </h3>
-            <p className="text-gray-600">
-              Manage tasks with full CRUD functionality and search filtering.
-            </p>
-          </div>
-
-          <div className="p-6 shadow rounded-lg hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-3">
-              Scalable Architecture
-            </h3>
-            <p className="text-gray-600">
-              Built with modern React & Node.js for production-level scaling.
-            </p>
-          </div>
-
-        </div>
+    
       </div>
     </div>
+
+    {/* Right Image */}
+    <div className="flex justify-center">
+      <img
+        src="https://illustrations.popsy.co/gray/work-from-home.svg"
+        alt="Task Management Illustration"
+        className="w-full max-w-md md:max-w-lg drop-shadow-lg"
+      />
+    </div>
+
+  </div>
+
+  {/* ================= FEATURES SECTION ================= */}
+  <div className="py-20 bg-white">
+    <div className="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Why Choose TaskPro?
+      </h2>
+
+      <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
+        Designed with modern technologies to ensure performance, security,
+        and scalability for your daily workflow.
+      </p>
+
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* Feature Card 1 */}
+        <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+          <div className="text-4xl mb-4">🔐</div>
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">
+            Secure Authentication
+          </h3>
+          <p className="text-gray-600">
+            JWT-based login system with encrypted passwords ensuring top-level security.
+          </p>
+        </div>
+
+        {/* Feature Card 2 */}
+        <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+          <div className="text-4xl mb-4">📊</div>
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">
+            Real-time Dashboard
+          </h3>
+          <p className="text-gray-600">
+            Full CRUD functionality with advanced search and task management.
+          </p>
+        </div>
+
+        {/* Feature Card 3 */}
+        <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+          <div className="text-4xl mb-4">⚡</div>
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">
+            Scalable Architecture
+          </h3>
+          <p className="text-gray-600">
+            Built using modern React architecture for production scaling.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
   );
 };
 
